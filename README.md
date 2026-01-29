@@ -51,7 +51,7 @@ Fitur ini berfungsi sebagai validasi lokasi fisik saat transaksi terjadi:
 
 # Pengujian Postman
 * Headers
-<img width="2118" height="328" alt="Screenshot 2026-01-29 143930" src="https://github.com/user-attachments/assets/d7101ce4-be4e-405d-9a19-bf24ff1bd10e" />
+<img width="2051" height="308" alt="image" src="https://github.com/user-attachments/assets/e7e2434a-2a6d-44b9-bd02-3e01a922fc80" />
 
 1. GET Book
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/4879a205-7e4a-483a-a9fd-d3febccf47b7" />
