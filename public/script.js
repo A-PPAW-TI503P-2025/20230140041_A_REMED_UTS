@@ -85,7 +85,7 @@ function renderTable(books) {
                         </button>
                     ` : `
                         <button class="btn-action success" onclick="borrowBook(${book.id})" ${!isReady ? 'disabled' : ''}>
-                            <i class="fas fa-hand-holding"></i> Pinjam
+                            Pinjam
                         </button>
                     `}
                 </td>
