@@ -49,7 +49,7 @@ Fitur ini berfungsi sebagai validasi lokasi fisik saat transaksi terjadi:
 * **Coordinate Requirement**: Endpoint peminjaman mewajibkan adanya payload `latitude` dan `longitude`.
 * **Transaction Logging**: Koordinat lokasi tidak hanya divalidasi, tetapi juga diarsipkan ke dalam tabel `BorrowLogs` sebagai data audit peminjaman.
 
-# Bukti Pengujian Postman
+# Pengujian Postman
 * Headers
 <img width="2118" height="328" alt="Screenshot 2026-01-29 143930" src="https://github.com/user-attachments/assets/d7101ce4-be4e-405d-9a19-bf24ff1bd10e" />
 
@@ -72,6 +72,9 @@ Fitur ini berfungsi sebagai validasi lokasi fisik saat transaksi terjadi:
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/aaf88c15-8a5f-42fd-9571-72bc919c6b2e" />
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/29945f09-8846-4f88-97cd-d564d94dfeb4" />
 
+7. Akses Ditolak
+<img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/46042784-c5ff-45fe-89ea-7711114bee1b" />
+
 
 # Tampilan Web
 1. Tampilan Awal
@@ -91,7 +94,6 @@ Fitur ini berfungsi sebagai validasi lokasi fisik saat transaksi terjadi:
 
 # Database
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/b4f5662e-7951-4f17-8818-ee047c3953d5" />
-<img width="1408" height="1111" alt="image" src="https://github.com/user-attachments/assets/797581aa-eea4-4bb8-8630-3f3691e9ee18" />
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/413cbf6e-9c09-488d-b243-462812d35523" />
 <img width="2240" height="1400" alt="image" src="https://github.com/user-attachments/assets/cce67fff-5f15-4485-a6cb-c3e43c7905cf" />
 
