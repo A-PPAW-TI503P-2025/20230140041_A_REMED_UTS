@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <section id="role-portal" class="portal-overlay">
+        <div class="glass-card">
+            <div class="portal-header">
+                <h1>LibrarySystem</h1>
+            </div>
+            
+            <div class="role-options">
+                <button class="role-btn admin" onclick="login('admin')">
+                    <i class="fas fa-user-shield"></i>
+                    <div>
+                        <strong>Administrator</strong>
+                        <span>Kelola Buku</span>
+                    </div>
+                </button>
+
+                <button class="role-btn user" onclick="login('user')">
+                    <i class="fas fa-walking"></i>
+                    <div>
+                        <strong>Peminjam (User)</strong>
+                        <span>Akses Geolocation</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="app-container" class="hidden">
+        <header class="app-bar">
+            <div class="brand">
+                <i class="fas fa-layer-group"></i>
+                <h2>Dashboard <span id="display-role"></span></h2>
+            </div>
+            <div class="user-meta">
+                <div id="geo-indicator" class="geo-badge hidden">
+                    <i class="fas fa-location-arrow"></i>
+                    <span id="coord-text">GPS Aktif</span>
+                </div>
+                <button class="logout-link" onclick="logout()">
+                    <i class="fas fa-power-off"></i> Keluar
+                </button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="content-card">
+                <div class="table-header">
+                    <h3>Koleksi Perpustakaan</h3>
+                    <button id="add-trigger" class="btn-action primary hidden" onclick="toggleModal('add')">
+                        <i class="fas fa-plus-circle"></i> Tambah Koleksi
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table id="main-table">
+                        <thead id="table-head">
+                            </thead>
+                        <tbody id="table-body">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="form-modal" class="modal-backdrop hidden">
+        <div class="modal-box">
+            <div class="modal-head">
+                <h4 id="modal-title">Form Data Buku</h4>
+                <button onclick="toggleModal()" class="close-x">&times;</button>
+            </div>
+            <form id="book-form" class="standard-form">
+                <input type="hidden" id="edit-id">
+                <div class="input-group">
+                    <label>Judul Buku</label>
+                    <input type="text" id="inp-title" required placeholder="Masukkan judul...">
+                </div>
+                <div class="input-group">
+                    <label>Penulis</label>
+                    <input type="text" id="inp-author" required placeholder="Nama penulis...">
+                </div>
+                <div class="input-group">
+                    <label>Stok Tersedia</label>
+                    <input type="number" id="inp-stock" min="0" value="1">
+                </div>
+                <div class="form-footer">
+                    <button type="button" class="btn-link" onclick="toggleModal()">Batal</button>
+                    <button type="submit" class="btn-submit">Simpan Perubahan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
